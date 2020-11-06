@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"> <!--Importerar en ikon för webbläsarfliken-->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <title>CODESIGN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body>
+        <header>
+            <div id = "menydiv">
+                <img id = "meny" src = "images/icons/hamburger.png" alt = "Meny" class = "headericons" onclick = openMeny() />
+            </div>
+            <div id = "rubrikdiv">
+                <h1 id="logo">
+                    <span id="co">CO</span><span id="design">DESIGN</span>
+                </h1>
+            </div>
+            <div id = "hemdiv">
+                <img id ="hem" src = "images/icons/home.png" alt = "Hem" class="headericons" onclick= "window.location.href = 'startsida.html';" />
+            </div>
+            <div id = "dropdown">
+                <div id = "omOssLink" class = "dropdownlink" onclick="window.location.href = 'omOss.html';">
+                    <p>Om oss</p>
+                </div>
+                <div id = "portfolioLink" class = "dropdownlink" onclick="window.location.href = 'portfolio.html';">
+                    <p>Portfolio</p>
+                </div>
+                <div id = "kontaktLink" class = "dropdownlink" onclick="window.location.href = 'kontakt.html';">
+                    <p>Kontakt</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="desktoplänkar">
+                <div id = "hemlink" class="navigering" onclick= "window.location.href ='startsida.html';"><p>HEM</p></div>
+                <div class="navigering" onclick= "window.location.href ='omOss.html';"><p>OM OSS</p></div>
+                <div class="navigering" onclick= "window.location.href ='portfolio.html';"><p>PORTFOLIO</p></div>
+                <div class="navigering" onclick= "window.location.href ='kontakt.html';"><p>KONTAKT</p></div>
+            </div>
+            <h2>Välkommen till Cooperative Designs</h2>
+            <div id="bildspelDiv">
+                <img id="pauseIkon" src="images/icons/pauseikon.png" alt = "Pausknapp"/>
+                <img id = "bildspel" src="images/dator.jpg" alt = "Här rullar ett bildspel" onclick="pause()"/><br/>
+            </div>
+            <hr/>
+            <p class = "brödtext">Välkommen till Cooperative Designs: Squarespace-mördaren. Vi är glada att ha dig här! Här kan du läsa mer om vad vi gör. Kontakta oss gärna om du har några frågor om fräsiga webbsidor.</p>
+        </main>
+        <footer>
+            <img src="images/icons/fb.png" class ="footericons" alt = "Facebookikon" onclick= "window.location.href = 'http://www.facebook.com/orebrouni/'">
+            <img src="images/icons/mail.png" class = "footericons" alt = "Mailikon" onclick= "window.location.href = 'mailto:kundtjänst@boysAB.se?subject=Hjälp mig!';">
+        </footer>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

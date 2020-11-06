@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <title>Om oss | CODESIGN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body>
+        <header>
+            <div id = "menydiv">
+                <img id = "meny" src = "images/icons/hamburger.png" alt = "Meny" class = "headericons" onclick = openMeny() />
+            </div>
+            <div id = "rubrikdiv">
+                <h1 id="logo">
+                    <span id="co">CO</span><span id="design">DESIGN</span>
+                </h1>
+            </div>
+            <div id = "hemdiv">
+                <img id ="hem" src = "images/icons/home.png" alt = "Hem" class="headericons" onclick= "window.location.href = 'startsida.html';" />
+            </div>
+            <div id = "dropdown">
+                <div id = "omOssLink" class = "dropdownlink" onclick="window.location.href = 'omOss.html';">
+                    <p>Om oss</p>
+                </div>
+                <div id = "portfolioLink" class = "dropdownlink" onclick="window.location.href = 'portfolio.html';">
+                    <p>Portfolio</p>
+                </div>
+                <div id = "kontaktLink" class = "dropdownlink" onclick="window.location.href = 'kontakt.html';">
+                    <p>Kontakt</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="desktoplänkar">
+                <div id = "hemlink" class="navigering" onclick= "window.location.href ='startsida.html';"><p>HEM</p></div>
+                <div class="navigering" onclick= "window.location.href ='omOss.html';"><p>OM OSS</p></div>
+                <div class="navigering" onclick= "window.location.href ='portfolio.html';"><p>PORTFOLIO</p></div>
+                <div class="navigering" onclick= "window.location.href ='kontakt.html';"><p>KONTAKT</p></div>
+            </div>
+            <h2>Om oss!</h2>
+            <div class ="brödtext">
+                <p>
+                    Vi här på Cooperative Designs AB specialiserar oss på minimalistisk, effektiv webdesign. Vårt team har kollektivt flera veckors erfarenhet av webbutveckling och är satta på denna jord för att uppfylla hela världens behov av responsiva websidor! Våra snitsiga pojkar googlar lösningarna du inte ens visste fanns!
+                </p>
+            </div>
+            <div id = "containerPerson">
+                <hr/>
+                <div id = "patrik" class = "person">
+                    <img src ="images/person.jpg" class = "portrait" alt="En bild på Patrik"/>
+                    <p>
+                        <b>Patrik Risberg</b><br/>Dynamic Functionality Administrator<br/>
+                        <a href = "patrik.html">Mer info om Patrik</a>
+                    </p>
+                </div>
+                <hr class="mobilbreak"/>
+                <div id = "sami" class = "person">
+                    <img src ="images/person3.jpg" class = "portrait" alt="En bild på Sami"/>
+                    <p>
+                        <b>Sami Zeidan</b><br/>Product Usability Representative<br/>
+                        <a href = "sami.html">Mer info om Sami</a>
+                    </p>
+                </div>
+                <hr class="mobilbreak"/>
+                <div id = "daniel" class = "person">
+                    <img src ="images/person2.jpg" class = "portrait" alt="En bild på Daniel"/>
+                    <p>
+                        <b>Daniel Antonsson</b><br/>Corporate Resonance Specialist<br/>
+                        <a href = "daniel.html">Mer info om Daniel</a>
+                    </p>
+                </div>
+                <hr class="mobilbreak"/>
+                <div id = "merhawi" class = "person">
+                    <img src ="images/person4.jpg" class = "portrait" alt="En bild på Merhawi"/>
+                    <p>
+                        <b>Merhawi Berhane</b><br/>Direct Optimization Supervisor<br/>
+                        <a href = "merhawi.html">Mer info om Merhawi</a>
+                    </p>
+                </div>
+           </div>
+        </main>
+        <footer>
+            <img src="images/icons/fb.png" class ="footericons" onclick= "window.location.href = 'http://www.facebook.com/orebrouni/'" alt="Facebookikon">
+            <img src="images/icons/mail.png" class = "footericons" onclick= "window.location.href = 'mailto:kundtjänst@boysAB.se?subject=Hjälp mig!';" alt="Mailikon">
+        </footer>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

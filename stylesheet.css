@@ -1,0 +1,338 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+#pauseIkon {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    max-width: 30%;
+    max-height: 30%;
+} 
+#bildspelDiv {
+    margin: 1em 0 2em 0;
+    position: relative;
+}
+.portrait {
+    max-height: 40vh;
+}
+.landscape {
+    max-width: 90%;
+}
+.headericons {
+    max-width: 2.35em;
+    max-height: 2.35em;
+}
+.footericons {
+    max-width: 2em;
+    max-height: 2em;
+}
+#logo {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#co {
+    color: #bde6f0;
+}
+#design {
+    color: #f7f7f7;
+}
+h1 {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+header{
+    top: 0;
+    padding: 0.5em 0 0 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    background-color: lightslategray;
+    border-bottom: 0.1em solid #000000;
+    width: 100%;
+}
+#menydiv {
+    width: 15%;
+    float: left;
+}
+#rubrikdiv {
+    width: 70%;
+    float: left;
+    color: #fdfcff;
+}
+#hemdiv {
+    width: 15%;
+    float: left
+}
+.brödtext {
+    width: 85%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+#googlemap {
+    max-width: 100%;
+    width: 80%;
+    height: 15em;
+}
+#meny {
+    max-width: 100%;
+}
+#hem {
+    max-width: 100%;
+}
+#desktoplänkar {
+    display: none;
+}
+#dropdown {
+    z-index: 1000;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0.1em solid #000000;
+    position: absolute;
+    width: 40%;
+    margin: 2.65em 0 0 0;
+}
+.dropdownlink {
+    border-bottom: 0.1em solid black;
+}
+#kontaktLink {
+    border: none;
+}
+main {
+    text-align: center;
+    padding: 0 0 3em 0;
+    margin: 0;   
+}
+.formular {
+    text-align: left;
+    padding: 0 0 0 0.7em;
+}
+label {
+    margin: 1em 0;
+}
+.field {
+    border: 0.2em solid #666666;
+    border-radius: 0.3em;
+}
+#bildspel {
+    max-width: 90%;
+}
+footer {
+    background-color: #444444;
+    border-top: 0.1em solid #000000;
+    margin-top: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.person {
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+.barcontainer {
+    width: 75%;
+    background-color: #ddd;
+    border-radius: 2em;
+    margin: auto;
+    margin-bottom: 0.8em;
+    box-sizing:border-box;
+}
+.barskills {
+    text-align: right;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    font-size: 0.4em;
+}
+#htmlbar {
+    width: 0%;
+    background-color: lightskyblue;
+    border-radius: 2em;}
+#cssbar {
+    width: 0%;
+    background-color: hotpink;
+    border-radius: 2em;}
+#jsbar {
+    width: 0%;
+    background-color: khaki;
+    border-radius: 2em;}
+#jquerybar {
+    width: 0%;
+    background-color: mediumaquamarine;
+    border-radius: 2em;}
+.barrubrik {
+    font-size: 0.6em;
+}
+.bardiv {
+    margin-bottom: 3em;
+}
+.projektLink {
+    display: inline-block;
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    border: 0.1em outset black;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    margin: 0 0.1em 0.3em 0;
+}
+.projektLink:hover {
+    background-color: #bde6f0;
+    color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+    #pauseIkon {
+        max-width: 20%;
+        max-height: 20%;
+    }
+    .navigering:hover {
+        background-color: #bde6f0;
+    }
+    #rubrikdiv {
+        width: 100%;
+    }
+    #desktoplänkar {
+        width: 100%;
+        background-color: lightslategray;
+        display: inline-flex;
+        position: relative;
+        color: white;
+    }
+    header {
+        margin: 0;
+        padding: 0.7em 0;
+        display: inline-flex;
+        border: none;
+    }
+    .navigering {
+        width: 25%;
+        float: left;
+        text-align: center;
+        display: block;
+        border: 0.1em solid #333333;
+        border-right: 0;
+    }
+    #hemlink {
+        border-left: none;
+    }
+    .landscape {
+        max-width: 50%;
+    }
+    #containerPerson {
+        width: 100%;
+    }
+    .person {
+        width: 25%;
+        float: left;
+    }
+    .portrait {
+        max-height: 50vh;
+        max-width: 25vw;
+    }
+    #bildspel {
+        max-width: 50%;
+    }
+    #menydiv {
+        display: none;
+    }
+    #hemdiv {
+        display: none;
+    }
+    #dropdown {
+        display: none;
+    }
+    .mobilbreak {
+        display: none;
+    }
+    .brödtext {
+        width: 70%;
+    }
+    h2{
+        margin-top: 1.5em;
+    }
+    .formular {
+       text-align: center;
+    }
+    .error {
+        position: absolute;
+    }
+    #googlemap {
+        width: 60%;
+        height: 25em;
+    }
+    .barrubrik {
+        font-size: 1em;
+    }
+    .barcontainer {
+        width: 40%;
+    }
+    .barskills {
+        font-size: 0.5em;
+    }
+    .omPerson {
+        width: 60%;
+        margin: auto;
+        display: inline-block;
+        padding: 0;
+    }
+    #personbild {
+        max-width: 35%;
+        float: left;
+    }
+    #textdiv {
+        padding: 0 1em;
+        width: 65%;
+        float: left;
+        box-sizing: border-box;
+    }
+    #persontext {
+        max-width: 100%;
+    }
+    .landscape {
+        max-width: 50%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .field {
+        height: 1.2em;
+    }
+    .brödtext {
+        width: 50%;
+    }
+    #googlemap {
+        width: 40%;
+        height: 25em;
+    }
+    .omPerson {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 300px) {
+    .error {
+        display: none;
+    }
+}
+@media screen and (min-width: 1921px) {
+    html {
+        font-size: 0.75vw;
+        }
+    .field {
+        height: 1.25em;
+        font-size: 1em;
+    }
+    #submit {
+        height: 1.25em;
+        font-size: 1em;
+    }
+}

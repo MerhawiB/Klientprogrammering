@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <title>Kontakt | CODESIGN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id = "menydiv">
+                <img id = "meny" src = "images/icons/hamburger.png" alt = "Meny" class = "headericons" onclick = openMeny() />
+            </div>
+            <div id = "rubrikdiv">
+                <h1 id="logo">
+                    <span id="co">CO</span><span id="design">DESIGN</span>
+                </h1>
+            </div>
+            <div id = "hemdiv">
+                <img id ="hem" src = "images/icons/home.png" alt = "Hem" class="headericons" onclick= "window.location.href = 'startsida.html';" />
+            </div>
+            <div id = "dropdown">
+                <div id = "omOssLink" class = "dropdownlink" onclick="window.location.href = 'omOss.html';">
+                    <p>Om oss</p>
+                </div>
+                <div id = "portfolioLink" class = "dropdownlink" onclick="window.location.href = 'portfolio.html';">
+                    <p>Portfolio</p>
+                </div>
+                <div id = "kontaktLink" class = "dropdownlink" onclick="window.location.href = 'kontakt.html';">
+                    <p>Kontakt</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="desktoplänkar">
+                <div id = "hemlink" class="navigering" onclick= "window.location.href ='startsida.html';"><p>HEM</p></div>
+                <div class="navigering" onclick= "window.location.href ='omOss.html';"><p>OM OSS</p></div>
+                <div class="navigering" onclick= "window.location.href ='portfolio.html';"><p>PORTFOLIO</p></div>
+                <div class="navigering" onclick= "window.location.href ='kontakt.html';"><p>KONTAKT</p></div>
+            </div>
+            <h2>Kontakta oss genom att fylla i formuläret</h2>
+            <div class="formular">
+                <form onsubmit="valideringForm()">
+                    <label>Namn: </label><br/>
+                    <input class = "field" id="namn" type="text" placeholder="Namn Namnsson"><span class = "error" id="namnMeddelande"></span><br/><br/>
+                    <label>Telefonnummer: </label><br/>
+                    <input class = "field" id="number" type="number" placeholder="07XXXXXXXX"><span class = "error" id="mobilMeddelande"></span><br/><br/>
+                    <label>E-postadress: </label><br/>
+                    <input class = "field" id="email" type="email" placeholder="exempel@email.com"><span class = "error" id="emailMeddelande"></span><br/><br/>
+                    <label>Meddelande: </label><br/>
+                    <textarea class = "field" id="meddelande" placeholder="Text"></textarea><span class = "error" id="textMeddelande"></span><br/><br/>
+                    <input type="submit" value="Skicka" id="submit">
+                </form>
+            </div>
+            <div class="map">
+                <hr>
+            <h2>Hitta oss</h2>
+                <iframe id= "googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039.710619383014!2d15.24704131606927!3d59.254275981632645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c68be4bfe7837%3A0xdfdabe0078c8642!2s%C3%96rebro+universitet!5e0!3m2!1ssv!2sse!4v1535472326939">
+                </iframe>
+            </div>
+        </main>
+        <footer>
+            <img src="images/icons/fb.png" class ="footericons" onclick= "window.location.href = 'http://www.facebook.com/orebrouni/'" alt="Facebookikon">
+            <img src="images/icons/mail.png" class = "footericons" onclick= "window.location.href = 'mailto:kundtjänst@boysAB.se?subject=Hjälp mig!';" alt="Facebookikon">
+        </footer>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

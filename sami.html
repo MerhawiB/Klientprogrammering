@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <title>Sami Zeidan | CODESIGN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body>
+        <header>
+            <div id = "menydiv">
+                <img id = "meny" src = "images/icons/hamburger.png" alt = "Meny" class = "headericons" onclick = openMeny() />
+            </div>
+            <div id = "rubrikdiv">
+                <h1 id="logo">
+                    <span id="co">CO</span><span id="design">DESIGN</span>
+                </h1>
+            </div>
+            <div id = "hemdiv">
+                <img id ="hem" src = "images/icons/home.png" alt = "Hem" class="headericons" onclick= "window.location.href = 'startsida.html';" />
+            </div>
+            <div id = "dropdown">
+                <div id = "omOssLink" class = "dropdownlink" onclick="window.location.href = 'omOss.html';">
+                    <p>Om oss</p>
+                </div>
+                <div id = "portfolioLink" class = "dropdownlink" onclick="window.location.href = 'portfolio.html';">
+                    <p>Portfolio</p>
+                </div>
+                <div id = "kontaktLink" class = "dropdownlink" onclick="window.location.href = 'kontakt.html';">
+                    <p>Kontakt</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="desktoplänkar">
+                <div id = "hemlink" class="navigering" onclick= "window.location.href ='startsida.html';"><p>HEM</p></div>
+                <div class="navigering" onclick= "window.location.href ='omOss.html';"><p>OM OSS</p></div>
+                <div class="navigering" onclick= "window.location.href ='portfolio.html';"><p>PORTFOLIO</p></div>
+                <div class="navigering" onclick= "window.location.href ='kontakt.html';"><p>KONTAKT</p></div>
+            </div>
+            <h3>Sami Zeidan</h3>
+            <div class = "bardiv">
+                <p class = "barrubrik">HTML</p>
+                <div class="barcontainer">
+                    <div id = "htmlbar" class="barskills">50%</div>
+                </div>
+                
+                <p class = "barrubrik">CSS</p>
+                <div class="barcontainer">
+                    <div id ="cssbar" class="barskills">50%</div>
+                </div>
+                
+                <p class = "barrubrik">JavaScript</p>
+                <div class="barcontainer">
+                    <div id= "jsbar" class="barskills">50%</div>
+                </div>
+                
+                <p class = "barrubrik">JQuery</p>
+                <div class="barcontainer">
+                    <div id ="jquerybar" class="barskills">50%</div>
+                </div>
+            </div>
+                <div class = "omPerson">
+                    <img id = "personbild" class = "portrait" src ="images/person3.jpg" alt="En bild på Sami"/>
+                    <div id = "textdiv">
+                        <p id = "persontext">Let us not deceive ourselves into thinking that deliverables ensure the synergies. It's so clear that an impactful major player fiscally closes the loop on the issue of customer scenarios.
+
+                            Testing “executive advisory boards bite the proverbial bullet.” Truly we must. We will inevitably take the lead in revenue, only to speed ahead of the pack in the enterprise field of ubiquitous revenues. We must put a corporate titan in place so that the mobile critical path agrees to disagree. In order to assure that total quality management (TQM) knocks your socks off, we must be certain that the synergistic time frame ensures corporate geographies.</p>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <img src="images/icons/fb.png" class ="footericons" onclick= "window.location.href = 'http://www.facebook.com/orebrouni/'" alt="Facebookikon">
+            <img src="images/icons/mail.png" class = "footericons" onclick= "window.location.href = 'mailto:kundtjänst@boysAB.se?subject=Hjälp mig!';" alt="Mailikon">
+        </footer>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

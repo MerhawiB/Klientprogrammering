@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <title>Patrik Risberg | CODESIGN</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body>
+        <header>
+            <div id = "menydiv">
+                <img id = "meny" src = "images/icons/hamburger.png" alt = "Meny" class = "headericons" onclick = openMeny() />
+            </div>
+            <div id = "rubrikdiv">
+                <h1 id="logo">
+                    <span id="co">CO</span><span id="design">DESIGN</span>
+                </h1>
+            </div>
+            <div id = "hemdiv">
+                <img id ="hem" src = "images/icons/home.png" alt = "Hem" class="headericons" onclick= "window.location.href = 'startsida.html';" />
+            </div>
+            <div id = "dropdown">
+                <div id = "omOssLink" class = "dropdownlink" onclick="window.location.href = 'omOss.html';">
+                    <p>Om oss</p>
+                </div>
+                <div id = "portfolioLink" class = "dropdownlink" onclick="window.location.href = 'portfolio.html';">
+                    <p>Portfolio</p>
+                </div>
+                <div id = "kontaktLink" class = "dropdownlink" onclick="window.location.href = 'kontakt.html';">
+                    <p>Kontakt</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="desktoplänkar">
+                <div id = "hemlink" class="navigering" onclick= "window.location.href ='startsida.html';"><p>HEM</p></div>
+                <div class="navigering" onclick= "window.location.href ='omOss.html';"><p>OM OSS</p></div>
+                <div class="navigering" onclick= "window.location.href ='portfolio.html';"><p>PORTFOLIO</p></div>
+                <div class="navigering" onclick= "window.location.href ='kontakt.html';"><p>KONTAKT</p></div>
+            </div>
+            
+            <h3>Patrik Risberg</h3>
+            <div class = "bardiv">
+                <p class = "barrubrik">HTML</p>
+                <div class="barcontainer">
+                    <div id = "htmlbar" class="barskills">50%</div>
+                </div>
+                
+                <p class = "barrubrik">CSS</p>
+                <div class="barcontainer">
+                    <div id ="cssbar" class="barskills">68%</div>
+                </div>
+                
+                <p class = "barrubrik">JavaScript</p>
+                <div class="barcontainer">
+                    <div id= "jsbar" class="barskills">82%</div>
+                </div>
+                
+                <p class = "barrubrik">JQuery</p>
+                <div class="barcontainer">
+                    <div id ="jquerybar" class="barskills">42%</div>
+                </div>
+            </div>
+                <div class = "omPerson">
+                    <img id = "personbild" class = "portrait" alt = "En bild på Patrik" src ="images/person.jpg"/>
+                    <div id = "textdiv">
+                        <p id = "persontext">Let us not deceive ourselves into thinking that state-of-the-art get-it-done attitude has the drop dead dates. Customers need the best transition phase, and we fulfill that need with excellence. Mindshare rapidly agrees to disagree on committees. Leading indicators would seem to suggest that impactful benefit blows them away with mergers. The strategy rides the wave of a red flag and in view of the fact that human resource allocations ramp up progress on a proactive leadership position we clearly can conclude that a reality check leverages operating capital. I think that a six-sigma tangent has an objective. We are convinced that execution takes the initiative. The time frames follow through on the issue of a revolutionary gating factor. Executive advisory boards give rise to a legacy deliverable, which leads us to believe that the product line gets up to speed on a team executive advisory board. A revolutionary solution improves the performance of the geographies. The team player blows them away.</p>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <img src="images/icons/fb.png" class ="footericons" alt = "Facebookikon" onclick= "window.location.href = 'http://www.facebook.com/orebrouni/'">
+            <img src="images/icons/mail.png" class = "footericons" alt = "Mailikon" onclick= "window.location.href = 'mailto:kundtjänst@boysAB.se?subject=Hjälp mig!';">
+        </footer>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
